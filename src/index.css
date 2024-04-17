@@ -79,17 +79,13 @@ a {
   font-weight: bold;
 }
 
-/* .line {
-  border-left: 1.5px solid #fff;
-  height: 15px;
-} */
-
 .active {
   text-decoration: underline;
   font-weight: bold;
 }
 
 .rocket-details {
+  flex-direction: column;
   gap: 2%;
   width: 90%;
   margin: 15px auto;
@@ -157,6 +153,11 @@ button:hover {
   .mobileBtn {
     display: none;
   }
+
+  .rocket-details {
+    flex-direction: row;
+  }
+
   .header {
     justify-content: space-between;
     align-items: center;
