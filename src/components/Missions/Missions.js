@@ -25,9 +25,7 @@ const Missions = () => {
     <div>
       <Table
         responsive
-        striped
         bordered
-        hover
         className="mt-4 mx-auto w-75"
         size="sm"
       >

@@ -2,19 +2,27 @@
 :root {
 --styled-link: #ff0000;
 --header: #000;
+--text-color: #fff;
+
 }
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
 }
 
 html,
 body {
-  overflow-x: hidden;
   height: 100vh;
   width: 100%;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #000;
+  overflow-x: hidden;
 }
 
 .d-flex {
@@ -46,7 +54,7 @@ body {
   display: flex;
   background-color: var(--header);
   width: 100%;
-  color: #fff;
+  color: var(--text-color);
   justify-content: center;
 }
 
@@ -96,12 +104,13 @@ a {
   height: 300px;
   padding: 10px;
   border-radius: 5%;
+  z-index: 1;
 }
 
 .button {
   padding: 8px;
   background-color: rgb(43, 150, 199);
-  color: #fff;
+  color: var(--text-color);
   font-size: large;
   margin-top: 10px;
   border-radius: 5px;
@@ -125,7 +134,7 @@ button:hover {
   padding: 2px 4px;
   background-color: rgb(60, 140, 177);
   width: auto;
-  color: #fff;
+  color: var(--text-color);
   border-radius: 5%;
   margin-right: 1rem;
 }
@@ -142,7 +151,7 @@ button:hover {
 
 .no-styled-link {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .styled-link {
